@@ -1,0 +1,59 @@
+/*added by gutenberg editor*/
+/* -- gutenberg editor styles -- */
+.has-s-font-size, .has-s-font-size li, .has-s-font-size strong{
+    font-size: var(--step--1);
+    line-height: 1em;
+}
+.has-default-font-size, .has-default-font-size li, .has-default-font-size strong{
+    font-size: var(--step-0);
+    line-height: 1em;
+}
+.has-m-font-size, .has-m-font-size li, .has-m-font-size strong {
+    font-size: var(--step-1);
+    line-height: 1em;
+}
+.has-l-font-size, .has-l-font-size li, .has-l-font-size strong {
+    font-size: var(--step-2);
+    line-height: 1em;
+}
+.has-xl-font-size, .has-xl-font-size li, .has-xl-font-size strong{
+    font-size: var(--step-4);
+    line-height: 1em;
+}
+.has-xxl-font-size, .has-xxl-font-size li, .has-xxl-font-size strong{
+    font-size: var(--step-6);
+    line-height: 1em;
+}
+.has-xxxl-font-size, .has-xxxl-font-size li, .has-xxxl-font-size strong{
+    font-size: var(--step-8);
+    line-height: 1em;
+}
+
+/*colours set in functions/setup.php*/
+$colors: 
+primary,
+secondary, 
+lgrey,
+dgrey,
+black,
+white,
+body;
+
+@each $color in $colors {
+	.has-#{$color}-background-color {
+		background-color: var(--color-#{$color});
+	}
+	.has-#{$color}-color {
+		color: var(--color-#{$color});
+	}
+    hr.has-#{$color}-color {
+		border-color: var(--color-#{$color});
+	}
+}
+
+.has-primary-background-color a,
+.has-seconday-background-color a,
+.has-text-background-color a{
+    color: var(--white);
+    text-decoration: none;
+}

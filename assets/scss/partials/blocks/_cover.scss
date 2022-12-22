@@ -1,0 +1,19 @@
+/* Cover Styling */
+
+
+.block.cover{
+    position: relative;
+}
+
+.cover-inner-blocks{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.cover .cover-inner-blocks .block{
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+}

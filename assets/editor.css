@@ -1,0 +1,123 @@
+.columns > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    display: flex;
+}
+.block-editor *{
+    font-family: 'Montserrat', sans-serif;
+}
+.block-editor :is(h1, h2, h3, h4, h5, h6){
+    font-weight: 700;
+}
+.block-editor :is(h1, h2, h3, h4, h5, h6) strong{
+  
+    font-weight: 700;
+}
+.wp-block-acf-section{
+    width: 100%;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 20px;
+    box-sizing: border-box;
+}
+.text-block, .block__faqs{
+    width: 100%;
+    max-width: 100%;
+    border: 1px dashed rgba(0, 0, 0, 0.5);
+}
+
+.wp-block-acf-group{
+    margin: 0;
+    flex-basis: 100%;
+    border: 1px dashed black;
+    padding: 20px;
+}
+.block__group{
+    width: 100%!important;
+}
+
+html :where(.wp-block) {
+    max-width: 80%;
+}
+html :where(.wp-block)[data-align=wide]{
+    max-width: 90%;
+}
+.section__content > div > div > .wp-block > .wp-block-acf-group, .section__content > div > div > .wp-block-acf-group{
+    max-width: 60%;
+    margin-left: 5%;
+}
+.section__content > div > div > .wp-block[data-align=center] > .wp-block-acf-group{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block__how-to-book__step{
+    border-right: 1px dashed rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+.wp-block-acf-column, .wp-block-acf-faq-answer{
+    width: 100%;
+    max-width: 100%;
+}
+
+.wp-block-acf-group:not(.block > .wp-block-acf-group){
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+.accordion-arrow{
+    display: none;
+}
+
+.wp-block-acf-button .button{
+    color: #941C3F;
+    border: 1px solid #941C3F;
+    background: transparent;
+    vertical-align: top;
+}
+
+html :where(.wp-block)[data-align=right],
+html :where(.wp-block)[data-align=left],
+html :where(.wp-block)[data-align=center]{
+    height: 100%;
+}
+
+html :where(.wp-block)[data-align=right]>*{
+    display: flex;
+    justify-content: flex-end;
+    float: none;
+    height: 100%;
+}
+html :where(.wp-block)[data-align=left]>*{
+    display: flex;
+    justify-content: flex-start;
+    float: none;
+    height: 100%;
+}
+html :where(.wp-block)[data-align=center]>*{
+    display: flex;
+    justify-content: center;
+    float: none;
+    height: 100%;
+}
+
+.wp-block-separator{
+    border-top: 1px solid;
+}
+
+.cover{
+    position: relative;
+}
+.wp-block-acf-cover .cover .block-editor-inner-blocks{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.buttons .block-editor-block-list__layout{
+    display: flex;
+}
+.wp-block-acf-button{
+    border: 1px dashed rgba(0, 0, 0, 0.5);
+    height: 50px;
+    width: 100%
+}

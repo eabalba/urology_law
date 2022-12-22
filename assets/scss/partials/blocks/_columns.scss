@@ -1,0 +1,35 @@
+/* Column Wrapper */
+.block.columns{
+    display: flex;
+    column-gap: var(--space-gap);
+}
+
+.columns .block-column{
+    flex: 1 1 0px;
+    width: 100%;
+}
+.page-content .block-column{
+    min-width: 150px;
+}
+.page-sidebar .block-column{
+    min-width: 50px;
+}
+
+.columns > .block__group:first-child,
+.columns > .block-column,
+.block__group > .columns > .column{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+@media (max-width: 992px){
+    .columns.stack-on-mobile{
+        display: block;
+        width: 100%;
+        flex-basis: 100%;
+    }
+    .columns .block-column{
+        margin-top: 0!important;
+        margin-bottom: var(--space-margin-body)!important;
+    }
+}

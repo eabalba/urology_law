@@ -1,0 +1,54 @@
+/* Accordion Styling */
+.page-content .block.accordion,
+.page-content .accordion + .accordion{
+    padding-top: var(--space-b)!important;
+    padding-bottom: calc(var(--space-a)*1.5)!important;
+    margin-top: var(--space-gap);
+    margin-bottom: var(--space-gap);
+}
+
+.page-content .accordion-content{
+    max-width: 75%;
+    padding-top: var(--space-margin-body);
+}
+.page-sidebar .accordion-content{
+    padding-top: calc(var(--space-margin-body) / 2);
+}
+
+details[open] .accordion-heading .accordion-arrow{
+
+    transform: rotate(0deg);
+    transition: .5s;
+}
+.accordion-arrow{
+    min-width: 16px;
+    transform: rotate(180deg);
+    transition: .5s;
+}
+.accordion-heading{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4em;
+    font-weight: var(--font-weight-semibold);
+}
+
+.accordion-details .accordion-heading *{
+    margin-bottom: 0;
+}
+summary:hover{
+    cursor: pointer;
+}
+
+.accordion details + details{
+    margin-top: calc(1.4em);
+}
+
+
+
+
+.page-sidebar .block__group .block{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
